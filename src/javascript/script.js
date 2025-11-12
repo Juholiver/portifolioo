@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const nome = document.getElementById('nome').value;
-const mensagem = document.getElementById('mensagem').value;
+const nome = document.getElementById('nome');
+const mensagem = document.getElementById('mensagem');
 
 const telefone = "5515991915880";
 
-const texto = `Olá, meu nome é ${nome}, ${mensagem}`;
+const texto = `Olá, meu nome é ${nome.value}, ${mensagem.value}`;
 const mensagemFormatada = encodeURIComponent(texto);
 
 function enviarMensagem() {
