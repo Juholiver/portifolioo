@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="./src/imagens/inconpf.png">
 </head>
 <body>
+    <video autoplay muted loop class="video">
+     <source src="./src/imagens/coverr-ai-generated-sunset-rays-above-the-clouds-1080p.mp4" type="video/mp4">
+    </video>
     <header>
         <nav>
             <div class="logo">José Mario</div>
@@ -22,7 +25,7 @@
 
     <section class="hero">
         <h1>Olá, eu sou José Mario</h1>
-        <p>Desenvolvedor Web Full Stack</p>
+        <p class="hero-subtitle">Desenvolvedor Web Full Stack</p>
         <a href="#contato" class="btn">Entre em Contato</a>
     </section>
 
@@ -47,8 +50,7 @@
         <section id="formacao" class="section">
             <h2>Formação</h2>
             <div class="skill-card">
-                <p>Tecnologo em Análise e Desenvolvimento de Sistemas</p>
-                <p>Instituição: Anhanguera</p>
+                <h3>Tecnologo em Análise e Desenvolvimento de Sistemas</h3>
             </div>
         </section>
 
@@ -90,7 +92,7 @@
                         <h3>Dieta com IA</h3>
                         <p>Projeto que utiliza inteligência artificial para criar planos de dieta personalizados.</p>
                         <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, API Gemini</p>
-                        <a rel="stylesheet" href="https://dietaai-git-master-juholivers-projects.vercel.app/">Ver Projeto</a>
+                        <a rel="stylesheet" href="https://dietaai-nine.vercel.app/">Ver Projeto</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -108,7 +110,7 @@
                         <h3>Analisador de codigos com IA</h3>
                         <p>Analisador de códigos que utiliza inteligência artificial para fornecer feedback e sugestões de melhoria.</p>
                         <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, API Gemini</p>
-                        <a rel="stylesheet" href="https://analisador-de-codigo-com-ia-git-main-juholivers-projects.vercel.app/">Ver Projeto</a>
+                        <a rel="stylesheet" href="https://analisador-de-codigo-com-ia-nine.vercel.app/">Ver Projeto</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -117,7 +119,34 @@
                         <h3>Previsao do tempo</h3>
                         <p>Aplicativo que utiliza api weather para obter condições climáticas.</p>
                         <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, API Weather</p>
-                        <a rel="stylesheet" href="https://previsao-react-git-main-juholivers-projects.vercel.app/">Ver Projeto</a>
+                        <a rel="stylesheet" href="https://previsao-react.vercel.app/">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">👨‍🍳</div>
+                    <div class="project-info">
+                        <h3>Cardapio</h3>
+                        <p>Um aplicativo para gerenciar cardápios de restaurantes.</p>
+                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite</p>
+                        <a rel="stylesheet" href="https://cardapio-react-kappa.vercel.app/">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">🗨️</div>
+                    <div class="project-info">
+                        <h3>Chat Box com IA</h3>
+                        <p>Converse com um ia</p>
+                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, Apikey OpenIa</p>
+                        <a rel="stylesheet" href="https://chat-box-ia-eta.vercel.app/">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">💪🏽</div>
+                    <div class="project-info">
+                        <h3>Academia Ia</h3>
+                        <p>Aplicativo inspirado no anime solo leveling, onde você pede um treino e a ia cria um treino para você</p>
+                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, Apikey OpenIa</p>
+                        <a rel="stylesheet" href="https://academia-sololeving-ia.vercel.app/">Ver Projeto</a>
                     </div>
                 </div>
             </div>
@@ -128,17 +157,14 @@
             <form class="contact-form">
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome" required placeholder="Nome">
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+            
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Mensagem" rows="4"></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                <button type="submit" class="submit-btn" onclick="enviarMensagem()">Enviar Mensagem</button>
             </form>
         </section>
 
