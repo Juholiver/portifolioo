@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const nome = document.getElementById('nome').value;
 const mensagem = document.getElementById('mensagem').value;
 
-const telefone = "5515998985880";
+const telefone = "5515991915880";
 
 const texto = `Olá, meu nome é ${nome}, ${mensagem}`;
 const mensagemFormatada = encodeURIComponent(texto);
