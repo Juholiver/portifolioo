@@ -19,15 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const nome = document.getElementById('nome');
-const mensagem = document.getElementById('mensagem');
 
-const telefone = "5515991915880";
 
-const texto = `Olá, meu nome é ${nome.value}, ${mensagem.value}`;
-const mensagemFormatada = encodeURIComponent(texto);
+function enviarMensagem(event) {
+    event.preventDefault();
 
-function enviarMensagem() {
+    const nome = document.getElementById('nome').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    console.log(nome);
+    console.log(mensagem);
+
+    const telefone = "5515991915880";
+
+    const texto = `Olá, meu nome é ${nome}, ${mensagem}`;
+    const mensagemFormatada = encodeURIComponent(texto);
+
     const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${mensagemFormatada}`;
     window.open(url, '_blank');
 }
