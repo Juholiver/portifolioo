@@ -17,6 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
         element.classList.add('hidden');
         observer.observe(element);
     });
+
+    const frontEndSpan = document.getElementById('front-end');
+    const backEndSpan = document.getElementById('back-end');
+    const fullStackSpan = document.getElementById('full-stack');
+
+    const spans = [frontEndSpan, backEndSpan, fullStackSpan];
+    let currentSpanIndex = 0;
+
+    function switchSpans() {
+        const currentSpan = spans[currentSpanIndex];
+        const nextSpan = spans[(currentSpanIndex + 1) % spans.length];
+
+        currentSpan.style.display = 'none';
+        nextSpan.style.display = 'inline';
+
+        currentSpan.classList.remove('text-animation');
+        nextSpan.classList.add('text-animation');
+
+        currentSpanIndex = (currentSpanIndex + 1) % spans.length;
+    }
+
+    setInterval(switchSpans, 5000);
+    spans[0].classList.add('text-animation');
 });
 
 
