@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="pt-Br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,18 @@
     <link rel="icon" type="image/png" href="./src/imagens/inconpf.png">
 </head>
 <body>
-    <video autoplay muted loop class="video">
-     <source src="./src/imagens/coverr-ai-generated-sunset-rays-above-the-clouds-1080p.mp4" type="video/mp4">
+    <video autoplay muted loop class="video" aria-label="Vídeo de fundo mostrando raios de sol acima das nuvens">
+        <source src="./src/imagens/coverr-ai-generated-sunset-rays-above-the-clouds-1080p.mp4" type="video/mp4">
     </video>
+
     <header>
         <nav>
             <div class="logo">José Mario</div>
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#projetos-front">Projetos Front-End</a></li>
+                <li><a href="#projetos-back">Projetos Back-End</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -34,37 +36,36 @@
     </section>
 
     <div class="container">
+        <!-- Sobre -->
         <section id="sobre" class="section">
             <h2>Sobre Mim</h2>
             <div class="about-content">
                 <div class="about-img">
-                    <div class="profile-img" style="background-image: url('./src/imagens/PerfilTerno.png');"></div>
+                    <div class="profile-img" style="background-image: url('./src/imagens/PerfilTerno.png');" alt="Foto de perfil de José Mario"></div>
                 </div>
                 <div class="about-text">
-                    <p>Olá! Meu nome é José Mario, sou um desenvolvedor FullStack formado em Análise e Desenvolvimento de Sistemas, com habilidades em programação Full Stack. Possuo experiência em tecnologias como JavaScript, React, C#, NodeJS e banco de dados relacionais e não relacionais.</p>
-                    <p>Estou sempre buscando novos desafios e oportunidades para crescer como desenvolvedor e pessoa. Quero trabalhar em projetos inovadores e colaborativos que me permitam aprender e contribuir para a comunidade.
-
-                    Vamos Conectar!
-
-                    Se você está procurando por um desenvolvedor apaixonado e motivado, vamos conversar! Estou ansioso para discutir como posso contribuir para o seu projeto ou empresa.</p>
-                <p>Nas horas vagas, gosto de manter a forma física e mental na academia, ler mangás e jogar jogos eletrônicos desafiadores, especialmente da saga Soulsborne, e também sou fã de Senhor dos Anéis e Harry Potter.</p>
+                    <p>Olá! Meu nome é José Mario, sou um desenvolvedor FullStack formado em Análise e Desenvolvimento de Sistemas, com habilidades em programação Full Stack. Possuo experiência em tecnologias como JavaScript, React, C#, NodeJS e bancos de dados relacionais e não relacionais.</p>
+                    <p>Estou sempre buscando novos desafios e oportunidades para crescer como desenvolvedor e pessoa. Quero trabalhar em projetos inovadores e colaborativos que me permitam aprender e contribuir para a comunidade. Vamos conectar! Se você procura um desenvolvedor apaixonado e motivado, vamos conversar! Estou ansioso para discutir como posso contribuir para o seu projeto ou empresa.</p>
+                    <p>Nas horas vagas, gosto de manter a forma física e mental na academia, ler mangás e jogar jogos eletrônicos desafiadores, especialmente da saga Soulsborne. Também sou fã de Senhor dos Anéis e Harry Potter.</p>
                 </div>
             </div>
         </section>
+
+        <!-- Formação -->
         <section id="formacao" class="section">
             <h2>Formação</h2>
             <div class="skill-card">
-                <h3>Tecnologo em Análise e Desenvolvimento de Sistemas</h3>
+                <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
             </div>
         </section>
 
+        <!-- Habilidades -->
         <section id="habilidades" class="section">
-            
             <h2>Habilidades</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>Front-end</h3>
-                    <p>HTML, CSS, JavaScript, TypeScript, Angular,React, Next.js</p>
+                    <p>HTML, CSS, JavaScript, TypeScript, Angular, React, Next.js</p>
                 </div>
                 <div class="skill-card">
                     <h3>Back-end</h3>
@@ -76,26 +77,36 @@
                 </div>
                 <div class="skill-card">
                     <h3>Ferramentas</h3>
-                    <p>Git, VS Code, n8n</p>
+                    <p>Git, VS Code, n8n, JWT, Cookies</p>
                 </div>
                 <div class="skill-card">
                     <h3>Banco de Dados</h3>
-                    <p>MySQL, MongoDB, SubaBase</p>
+                    <p>MySQL, MongoDB, Supabase</p>
                 </div>
             </div>
         </section>
 
-        <section id="projetos" class="section">
-            <h2>Projetos Frond-End</h2>
+        <section id="projetos-front" class="section">
+            <h2>Projetos Front-End</h2>
             <div class="projects-grid">
-
+                <!-- Exemplo de projeto -->
                 <div class="project-card">
                     <div class="project-img">🎁</div>
                     <div class="project-info">
                         <h3>São Francisco Personalizados</h3>
                         <p>Uma loja online de produtos personalizados para a cidade de Itapetininga.</p>
-                        <p>Tecnologias: Next.js, TypeScript, HTML, CSS, React, MongoDb, JWT, Cokies</p>
-                        <a rel="stylesheet" href="https://sfp-nine.vercel.app/login">Ver Projeto</a>
+                        <p>Tecnologias: Next.js, TypeScript, HTML, CSS, MongoDB, JWT, Cookies</p>
+                        <a href="https://sfp-nine.vercel.app/login" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">🐶​​🐱​</div>
+                    <div class="project-info">
+                        <h3>Provet Itape Saas</h3>
+                        <p>Um Saas para gestão de veterinarios em Itapetininga.</p>
+                        <p>Tecnologias: Next.js, TypeScript, HTML, Tailwind CSS, supabase, JWT, Cokies, Auth</p>
+                        <a rel="stylesheet" href="https://provet-itape.vercel.app/">Ver Projeto</a>
                     </div>
                 </div>
 
@@ -208,21 +219,22 @@
             </div>
         </section>
 
-         <section id="projetos" class="section">
+        <section id="projetos-back" class="section">
             <h2>Projetos Back-End</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img">💾</div>
                     <div class="project-info">
-                        <h3>Api Tela Login</h3>
-                        <p>Uma Crud criada com NodeJs para salvar os dados em um banco mongoDB Atlas.</p>
-                        <p>Tecnologias: Node.Js, MongoDB Atlas</p>
-                        <a rel="stylesheet" href="https://github.com/Juholiver/appLoginNodeJs">Ver Projeto</a>
+                        <h3>API Tela Login</h3>
+                        <p>CRUD criada com Node.js para salvar os dados em um banco MongoDB Atlas.</p>
+                        <p>Tecnologias: Node.js, MongoDB Atlas</p>
+                        <a href="https://github.com/Juholiver/appLoginNodeJs" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contato -->
         <section id="contato" class="section">
             <h2>Contato</h2>
             <form class="contact-form">
@@ -230,7 +242,6 @@
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" required placeholder="Nome">
                 </div>
-            
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" required placeholder="Mensagem" rows="4"></textarea>
@@ -239,15 +250,18 @@
             </form>
         </section>
 
+        <!-- Redes Sociais -->
         <section class="social-media">
-            <a href="https://www.linkedin.com/in/jos%C3%A9-oliveira-desenvolvedor/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Juholiver" target="_blank">GitHub</a>
-            <a href="https://www.instagram.com/junior_oli_?igsh=MW00MTNpOXlkaDM5dQ==" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-oliveira-desenvolvedor/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Juholiver" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/junior_oli_?igsh=MW00MTNpOXlkaDM5dQ==" target="_blank" rel="noopener noreferrer">Instagram</a>
         </section>
     </div>
+
     <script src="./src/javascript/script.js"></script>
 
     <footer>
         <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
     </footer>
+</body>
 </html>
