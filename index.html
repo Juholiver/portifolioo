@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>José Mário | Desenvolvedor FullStack</title>
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="icon" type="image/png" href="./src/imagens/inconpf.png">
+    <link rel="icon" type="image/png" href="./src/idv/imagens/inconpf.png">
 </head>
 <body>
-    <video autoplay muted loop class="video" aria-label="Vídeo de fundo mostrando raios de sol acima das nuvens">
+    <video autoplay muted loop playsinline class="video" aria-label="Vídeo de fundo mostrando raios de sol acima das nuvens">
         <source src="./src/imagens/coverr-ai-generated-sunset-rays-above-the-clouds-1080p.mp4" type="video/mp4">
     </video>
 
     <header>
         <nav>
-            <div class="logo">José Mario</div>
+            <div class="logo">José Mário</div>
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -26,7 +26,7 @@
     </header>
 
     <section class="hero">
-        <h1>Olá, eu sou José Mario</h1>
+        <h1>Olá, eu sou José Mário</h1>
         <p class="hero-subtitle">
             <span id="front-end">Desenvolvedor Front End</span>
             <span id="back-end" style="display: none;">Desenvolvedor Back End</span>
@@ -36,22 +36,20 @@
     </section>
 
     <div class="container">
-        <!-- Sobre -->
         <section id="sobre" class="section">
             <h2>Sobre Mim</h2>
             <div class="about-content">
                 <div class="about-img">
-                    <div class="profile-img" style="background-image: url('./src/imagens/PerfilTerno.png');" alt="Foto de perfil de José Mario"></div>
+                    <div class="profile-img" style="background-image: url('./src/imagens/PerfilTerno.png');" role="img" aria-label="Foto de perfil de José Mário"></div>
                 </div>
                 <div class="about-text">
-                    <p>Olá! Meu nome é José Mario, sou um desenvolvedor FullStack formado em Análise e Desenvolvimento de Sistemas, com habilidades em programação Full Stack. Possuo experiência em tecnologias como JavaScript, React, C#, NodeJS e bancos de dados relacionais e não relacionais.</p>
-                    <p>Estou sempre buscando novos desafios e oportunidades para crescer como desenvolvedor e pessoa. Quero trabalhar em projetos inovadores e colaborativos que me permitam aprender e contribuir para a comunidade. Vamos conectar! Se você procura um desenvolvedor apaixonado e motivado, vamos conversar! Estou ansioso para discutir como posso contribuir para o seu projeto ou empresa.</p>
-                    <p>Nas horas vagas, gosto de manter a forma física e mental na academia, ler mangás e jogar jogos eletrônicos desafiadores, especialmente da saga Soulsborne. Também sou fã de Senhor dos Anéis e Harry Potter.</p>
+                    <p>Olá! Meu nome é José Mário, sou um desenvolvedor FullStack formado em Análise e Desenvolvimento de Sistemas. Possuo experiência em tecnologias como JavaScript, React, C#, NodeJS e bancos de dados relacionais e não relacionais.</p>
+                    <p>Estou sempre buscando novos desafios e oportunidades para crescer. Quero trabalhar em projetos inovadores e colaborativos que me permitam aprender e contribuir para a comunidade.</p>
+                    <p>Nas horas vagas, gosto de manter a forma na academia, ler mangás e jogar jogos desafiadores, especialmente da saga Soulsborne. Também sou fã de Senhor dos Anéis e Harry Potter.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Formação -->
         <section id="formacao" class="section">
             <h2>Formação</h2>
             <div class="skill-card">
@@ -59,7 +57,6 @@
             </div>
         </section>
 
-        <!-- Habilidades -->
         <section id="habilidades" class="section">
             <h2>Habilidades</h2>
             <div class="skills-grid">
@@ -89,24 +86,24 @@
         <section id="projetos-front" class="section">
             <h2>Projetos Front-End</h2>
             <div class="projects-grid">
-                <!-- Exemplo de projeto -->
+                
                 <div class="project-card">
                     <div class="project-img">🎁</div>
                     <div class="project-info">
                         <h3>São Francisco Personalizados</h3>
-                        <p>Uma loja online de produtos personalizados para a cidade de Itapetininga.</p>
-                        <p>Tecnologias: Next.js, TypeScript, HTML, CSS, MongoDB, JWT, Cookies</p>
+                        <p>Loja online de produtos personalizados com foco em UX moderno.</p>
+                        <p>Tecnologias: Next.js, TypeScript, MongoDB, JWT</p>
                         <a href="https://sfp-nine.vercel.app/login" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-img">🐶​​🐱​</div>
+                    <div class="project-img">🐶</div>
                     <div class="project-info">
                         <h3>Provet Itape Saas</h3>
-                        <p>Um Saas para gestão de veterinarios em Itapetininga.</p>
-                        <p>Tecnologias: Next.js, TypeScript, HTML, Tailwind CSS, supabase, JWT, Cokies, Auth</p>
-                        <a rel="stylesheet" href="https://provet-itape.vercel.app/">Ver Projeto</a>
+                        <p>SaaS para gestão de clínicas veterinárias com dashboard completo.</p>
+                        <p>Tecnologias: Next.js, TypeScript, Tailwind CSS, Supabase</p>
+                        <a href="https://provet-itape.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
 
@@ -114,105 +111,79 @@
                     <div class="project-img">🍔</div>
                     <div class="project-info">
                         <h3>Hamburgueria Express</h3>
-                        <p>Uma Hamburgueria fake para e um e-commerce online para pedidos rápidos, com carrinho para adicionar os protudos .</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, React</p>
-                        <a rel="stylesheet" href="https://express-hamburgueria.vercel.app/">Ver Projeto</a>
+                        <p>E-commerce para pedidos rápidos com gestão de estado no carrinho.</p>
+                        <p>Tecnologias: React, JavaScript, CSS</p>
+                        <a href="https://express-hamburgueria.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-img">🖥️</div>
                     <div class="project-info">
-                        <h3>TelaLogin</h3>
-                        <p>Uma tela de login para um sistema web, com validação de credenciais e navegação para outras páginas, utilizando minha propria api criada via Node.js para salvar os dados no banco MongoDBAtlas.</p>
-                        <p>Tecnologias: TypeScript, HTML, SCSS, Angular</p>
-                        <a rel="stylesheet" href="https://app-login-omega.vercel.app/login">Ver Projeto</a>
+                        <h3>Analisador de códigos com IA</h3>
+                        <p>Ferramenta que utiliza IA para feedback em tempo real sobre código.</p>
+                        <p>Tecnologias: React, Vite, API Gemini</p>
+                        <a href="https://analisador-de-codigo-com-ia-nine.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
-                
-                <div class="project-card">
-                    <div class="project-img">🖥️/div>
-                    <div class="project-info">
-                        <h3>Analisador de codigos com IA</h3>
-                        <p>Analisador de códigos que utiliza inteligência artificial para fornecer feedback e sugestões de melhoria.</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, API Gemini</p>
-                        <a rel="stylesheet" href="https://analisador-de-codigo-com-ia-nine.vercel.app/">Ver Projeto</a>
-                    </div>
-                </div>
+
                 <div class="project-card">
                     <div class="project-img">🌤️</div>
                     <div class="project-info">
-                        <h3>Previsao do tempo</h3>
-                        <p>Aplicativo que utiliza api weather para obter condições climáticas.</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, API Weather</p>
-                        <a rel="stylesheet" href="https://previsao-react.vercel.app/">Ver Projeto</a>
+                        <h3>Previsão do Tempo</h3>
+                        <p>Aplicação de consumo de API climática com interface responsiva.</p>
+                        <p>Tecnologias: React, Vite, API Weather</p>
+                        <a href="https://previsao-react.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-img">🌐</div>
                     <div class="project-info">
                         <h3>MyTranslator</h3>
-                        <p>Um tradutor de textos do português para diversos idiomas, que permite ao usuário falar ou escrever uma frase em português e ouvi-la traduzida no idioma escolhido.</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, Api mymemory</p>
-                        <a rel="stylesheet" href="https://juholiver.github.io/MyTranslator/">Ver Projeto</a>
+                        <p>Tradutor multilingue com suporte a reconhecimento de voz.</p>
+                        <p>Tecnologias: JavaScript, API MyMemory</p>
+                        <a href="https://juholiver.github.io/MyTranslator/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-img">📔</div>
                     <div class="project-info">
-                        <h3>Kanban com react</h3>
-                        <p>Aplicativo para gerenciar tarefas em um quadro Kanban.</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, React</p>
-                        <a rel="stylesheet" href="https://kanban-react-eight-opal.vercel.app/">Ver Projeto</a>
+                        <h3>Kanban com React</h3>
+                        <p>Gerenciador de tarefas arrastável para organização de fluxo.</p>
+                        <p>Tecnologias: React, JavaScript, CSS</p>
+                        <a href="https://kanban-react-eight-opal.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-img">👨‍🍳</div>
                     <div class="project-info">
-                        <h3>Cardapio</h3>
-                        <p>Um aplicativo para gerenciar cardápios de restaurantes.</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite</p>
-                        <a rel="stylesheet" href="https://cardapio-react-kappa.vercel.app/">Ver Projeto</a>
+                        <h3>Cardápio Digital</h3>
+                        <p>Sistema dinâmico para visualização de menus em restaurantes.</p>
+                        <p>Tecnologias: React, Vite, CSS Modules</p>
+                        <a href="https://cardapio-react-kappa.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-img">🗨️</div>
-                    <div class="project-info">
-                        <h3>Chat Box com IA</h3>
-                        <p>Converse com um ia</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, Apikey OpenIa</p>
-                        <a rel="stylesheet" href="https://chat-box-ia-eta.vercel.app/">Ver Projeto</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">💪🏽</div>
-                    <div class="project-info">
-                        <h3>Academia Ia</h3>
-                        <p>Aplicativo inspirado no anime solo leveling, onde você pede um treino e a ia cria um treino para você</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, Apikey OpenIa</p>
-                        <a rel="stylesheet" href="https://academia-sololeving-ia.vercel.app/">Ver Projeto</a>
-                    </div>
-                </div>
-                
-                
+
                 <div class="project-card">
                     <div class="project-img">🎨</div>
                     <div class="project-info">
-                        <h3>Fundo Magico</h3>
-                        <p>Projeto utiliza inteligência artificial para criar backgrounds personalizados.</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, N8N.</p>
-                        <a rel="stylesheet" href="https://juholiver.github.io/fundomagico/">Ver Projeto</a>
+                        <h3>Fundo Mágico</h3>
+                        <p>Criação de backgrounds personalizados via automação IA.</p>
+                        <p>Tecnologias: JavaScript, N8N</p>
+                        <a href="https://juholiver.github.io/fundomagico/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
+
                 <div class="project-card">
-                   
-                    <div class="project-img">🌐</div>
-                     
+                    <div class="project-img">💪</div>
                     <div class="project-info">
-                        <h3>Dieta com IA</h3>
-                        <p>Projeto que utiliza inteligência artificial para criar planos de dieta personalizados.</p>
-                        <p>Tecnologias: JavaScript, HTML, CSS, React, Vite, API Gemini</p>
-                        <a rel="stylesheet" href="https://dietaai-nine.vercel.app/">Ver Projeto</a>
+                        <h3>Academia IA (Solo Leveling)</h3>
+                        <p>Gerador de treinos temáticos utilizando inteligência artificial.</p>
+                        <p>Tecnologias: React, OpenAI API</p>
+                        <a href="https://academia-sololeving-ia.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                     </div>
                 </div>
             </div>
@@ -224,32 +195,30 @@
                 <div class="project-card">
                     <div class="project-img">💾</div>
                     <div class="project-info">
-                        <h3>API Tela Login</h3>
-                        <p>CRUD criada com Node.js para salvar os dados em um banco MongoDB Atlas.</p>
+                        <h3>API de Autenticação</h3>
+                        <p>Backend robusto para gestão de usuários e segurança com JWT.</p>
                         <p>Tecnologias: Node.js, MongoDB Atlas</p>
-                        <a href="https://github.com/Juholiver/appLoginNodeJs" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                        <a href="https://github.com/Juholiver/appLoginNodeJs" target="_blank" rel="noopener noreferrer">Ver Código</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contato -->
         <section id="contato" class="section">
             <h2>Contato</h2>
             <form class="contact-form">
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Nome">
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
                 </div>
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" required placeholder="Mensagem" rows="4"></textarea>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Como posso ajudar?" rows="4"></textarea>
                 </div>
                 <button type="submit" class="submit-btn" onclick="enviarMensagem(event)">Enviar Mensagem</button>
             </form>
         </section>
 
-        <!-- Redes Sociais -->
         <section class="social-media">
             <a href="https://www.linkedin.com/in/jos%C3%A9-oliveira-desenvolvedor/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://github.com/Juholiver" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -260,7 +229,7 @@
     <script src="./src/javascript/script.js"></script>
 
     <footer>
-        <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        <p>&copy; 2025 José Mário. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
